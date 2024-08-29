@@ -22,7 +22,7 @@ backup_repos() {
 # Function to download new repo files
 update_repos() {
     echo "Downloading new CentOS 7 repo files..."
-    curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirror.centos.org/centos/7/os/x86_64/CentOS-Base.repo
+    curl -o /etc/yum.repos.d/CentOS-Base.repo https://vault.centos.org/centos/7/os/x86_64/CentOS-Base.repo
     if [ $? -eq 0 ]; then
         echo "New repo file downloaded successfully."
     else
